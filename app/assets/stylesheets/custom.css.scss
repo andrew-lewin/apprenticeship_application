@@ -44,10 +44,13 @@ textarea {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 5px solid #aaa;
   color: #777;
+
+  hr {
+    display: block;
+    border: 3px solid #aaa;
+    border-radius: 5px;
+  }
 
   a {
     color: #555;
