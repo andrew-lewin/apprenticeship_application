@@ -1,6 +1,13 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
+/* color scheme */
+$off_white: #E3FBFF;
+$dark_gray: #717D7F;
+$light_gray: #B6C9CC;
+$dark_blue: #4B787F;
+$light_blue: #96F0FF;
+
 /* universal */
 
 body {
@@ -25,7 +32,6 @@ textarea {
 
 /* header */
 header {
-
 }
 
 /* footer */
