@@ -2,11 +2,11 @@
 @import "bootstrap-sprockets";
 
 /* color scheme */
-$off_white: #E3FBFF;
-$dark_gray: #717D7F;
-$light_gray: #B6C9CC;
-$dark_blue: #4B787F;
-$light_blue: #96F0FF;
+$off_white: #CEECFF;
+$dark_gray: #67767F;
+$light_gray: #A5BDCC;
+$dark_blue: #41677F;
+$light_blue: #81CEFF;
 
 /* universal */
 
@@ -32,10 +32,19 @@ textarea {
 
 /* header */
 header {
+  background-color: $dark_blue;
+  ul.nav {
+    a {
+      color: $light_gray;
+      &:hover {
+        background-color: $dark_blue;
+        color: $light_blue;
+      }
+    }
+  }
 }
 
 /* footer */
-
 footer {
   color: #777;
 
@@ -43,26 +52,20 @@ footer {
     display: block;
     border: 3px solid #aaa;
     border-radius: 5px;
+    border-color: $dark_gray;
   }
 
-  a {
-    color: #555;
-    &:hover {
-      color: #222;
-    }
-  }
-  
   small {
     float: left;
+    color: $dark_blue;
   }
+}
 
-  ul {
-    float: right;
-    list-style: none;
-
-    li {
-      float: left;
-      margin-left: 15px;
-    }
+/* main page jumbotron */
+.jumbotron {
+  background-color: $light_gray;
+  color: $dark_blue;
+  h1 {
+    color: $dark_gray;
   }
 }
