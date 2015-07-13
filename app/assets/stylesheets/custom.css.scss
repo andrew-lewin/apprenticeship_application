@@ -1,5 +1,5 @@
-@import "bootstrap";
 @import "bootstrap-sprockets";
+@import "bootstrap";
 
 /* color scheme */
 $off_white: #CEECFF;
@@ -7,6 +7,12 @@ $dark_gray: #67767F;
 $light_gray: #A5BDCC;
 $dark_blue: #41677F;
 $light_blue: #81CEFF;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
 
 /* universal */
 
@@ -17,12 +23,59 @@ body {
 .center {
   text-align: center;
 }
-h1 {
+h1, h2 {
   color: $dark_blue;
 }
 
 p {
   color: $dark_gray;
+}
+
+a {
+  color: $light_blue;
+  &:hover {
+    color: $light_gray;
+  }
+}
+
+/* forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box-sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+form {
+  color: $dark_gray;
+
+  .btn-primary {
+    background-color: $dark_blue;
+    border-color: $dark_blue;
+    color: $off_white;
+    &:hover {
+      background-color: $dark_gray;
+      border-color: $dark_gray;
+      color: $off_white;
+    }
+  }
+}
+
+.checkbox {
+  margin-left: 17px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 5px;
+    font-weight: normal;
+  }
+}
+
+.extra-bottom-padding {
+  margin-bottom: 10px;
 }
 
 /* alerts */
