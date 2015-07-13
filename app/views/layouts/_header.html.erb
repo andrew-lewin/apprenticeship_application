@@ -7,6 +7,14 @@
         <li><a href="https://github.com/wirdnah/">GitHub</a></li>
         <li><a href="https://git.moneydesktop.com/dev/support_scripts">MX GitHub</a></li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li><%= link_to "Log Out", destroy_user_session_path, :method => "delete" %></li>
+        <% else %>
+          <li><%= link_to "Log In", new_user_session_path %></li>
+          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        <% end %>
+      </ul>
     </nav>
   </div>
 </header>
