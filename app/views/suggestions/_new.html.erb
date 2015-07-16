@@ -1,0 +1,7 @@
+<%= form_for(@suggestion) do |f| %>
+  <% #render errors %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "Submit a new suggestion..." %>
+  </div>
+  <%= f.submit "Send", class: "btn, btn_primary" %>
+<% end %>
