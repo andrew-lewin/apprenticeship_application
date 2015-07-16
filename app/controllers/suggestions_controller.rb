@@ -20,7 +20,7 @@ class SuggestionsController < ApplicationController
   end
 
   def show
-    @suggestions = Suggestion.all
+    @suggestions = Suggestion.paginate(page: params[:page], per_page: 10)
     @suggestion = current_user.suggestion.build
   end
 
