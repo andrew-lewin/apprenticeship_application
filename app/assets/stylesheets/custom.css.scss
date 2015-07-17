@@ -122,3 +122,55 @@ footer {
     color: $dark_gray;
   }
 }
+
+/* suggestions */
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    background-color: $dark_blue;
+    margin-bottom: 5px;
+    border-radius: 20px;
+  }
+  .user-email {
+    margin-left: 60px;
+    padding-top: 0;
+    color: $light_gray;
+  }
+  .content {
+    display: block;
+    color: $off_white;
+    margin-left: 60px;
+    margin-right: 60px;
+    word-wrap: break-word;
+  }
+  .timestamp {
+    color: $light_gray;
+    display: block;
+    margin-top: -.5em;
+    margin-left: 60px;
+  }
+}
+
+.suggestion-form {
+  margin-top: 10px;
+  margin-right: 550px;
+  textarea {
+    height: 100px;
+  }
+  .btn_primary {
+    margin-right: 225px;
+    border-radius: 10px;
+    background-color: $light_blue;
+    border-color: $light_blue;
+    color: $dark_blue;
+    &:hover {
+      background-color: $light_gray;
+      border-color: $light_gray;
+      color: $off_white;
+    }
+  }
+}
+

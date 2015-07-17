@@ -1,7 +1,9 @@
 <%= provide(:title, "Suggestions") %>
 
 <h1>Suggestions</h1>
-<%= render "suggestions/new" %>
+<div class="suggestion-form">
+  <%= render "suggestions/new" %>
+</div>  
 <ol class="suggestions">
   <%= render @suggestions %>
 </ol>

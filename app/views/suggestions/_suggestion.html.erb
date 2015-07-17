@@ -1,6 +1,6 @@
 <li id="suggestion">
   <span class="user-email"><%= suggestion.user.email %></span>
-  <span class="content"><%= suggestion.content %></span>
+  <span><%= simple_format h(suggestion.content), :class => 'content'  %></span>
   <span class="timestamp">
     Posted <%= time_ago_in_words(suggestion.created_at) %> ago.
     <% if current_user == suggestion.user %>
