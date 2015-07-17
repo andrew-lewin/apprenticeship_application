@@ -63,17 +63,16 @@ form {
       color: $off_white;
     }
   }
-}
-
-.checkbox {
-  margin-left: 0px;
-  margin-bottom: 10px;
-  span {
-    margin-left: 20px;
-    font-weight: normal;
-  }
-  input[type="checkbox"] {
-    margin-left: -3px;
+  .checkbox {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    span {
+      margin-left: 20px;
+      font-weight: normal;
+    }
+    input[type="checkbox"] {
+      margin-left: -3px;
+    }
   }
 }
 
