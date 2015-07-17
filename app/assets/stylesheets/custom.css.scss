@@ -69,8 +69,11 @@ form {
   margin-left: 0px;
   margin-bottom: 10px;
   span {
-    margin-left: 5px;
+    margin-left: 20px;
     font-weight: normal;
+  }
+  input[type="checkbox"] {
+    margin-left: -3px;
   }
 }
 
